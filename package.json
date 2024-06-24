@@ -43,5 +43,8 @@
   "lint-staged": {
     "*.{ts,tsx,js,css,md}": "prettier --write packages apps docs *.md",
     "*.{ts,tsx}": "eslint --quiet --cache --fix packages apps/docs apps/web/pages apps/web/components"
+  },
+  "dependencies": {
+    "mongodb": "^6.7.0"
   }
 }
