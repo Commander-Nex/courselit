@@ -45,6 +45,7 @@
     "*.{ts,tsx}": "eslint --quiet --cache --fix packages apps/docs apps/web/pages apps/web/components"
   },
   "dependencies": {
+    "mongo": "^0.1.0",
     "mongodb": "^6.7.0"
   }
 }

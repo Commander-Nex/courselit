@@ -9099,6 +9099,7 @@ __metadata:
     eslint-plugin-unused-imports: ^2.0.0
     husky: ^9.0.11
     lint-staged: ^15.2.2
+    mongo: ^0.1.0
     mongodb: ^6.7.0
     prettier: ^3.0.2
   languageName: unknown
@@ -14633,6 +14634,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"mongo@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "mongo@npm:0.1.0"
+  dependencies:
+    mongodb: "*"
+  checksum: d1cefed82e80541ecd22f276c29a2b0c92b56f215ff25f8693c9b365b360cc113d58edbc9ee519a4e92466b2f7ce07ad1a2808c78e6bf0eef9bb5f25e18abd22
+  languageName: node
+  linkType: hard
+
 "mongodb-connection-string-url@npm:^2.5.4, mongodb-connection-string-url@npm:^2.6.0":
   version: 2.6.0
   resolution: "mongodb-connection-string-url@npm:2.6.0"
@@ -14650,6 +14660,40 @@ __metadata:
     "@types/whatwg-url": ^11.0.2
     whatwg-url: ^13.0.0
   checksum: b0a3b9e619c53ce8c10452c6475dc1eeba4761ae1b293b1b37014acf609f44ab7057f084de8fceead9934dba2aad0a59315eab9371c1287dbaaf5aae48c6d371
+  languageName: node
+  linkType: hard
+
+"mongodb@npm:*, mongodb@npm:^6.7.0":
+  version: 6.7.0
+  resolution: "mongodb@npm:6.7.0"
+  dependencies:
+    "@mongodb-js/saslprep": ^1.1.5
+    bson: ^6.7.0
+    mongodb-connection-string-url: ^3.0.0
+  peerDependencies:
+    "@aws-sdk/credential-providers": ^3.188.0
+    "@mongodb-js/zstd": ^1.1.0
+    gcp-metadata: ^5.2.0
+    kerberos: ^2.0.1
+    mongodb-client-encryption: ">=6.0.0 <7"
+    snappy: ^7.2.2
+    socks: ^2.7.1
+  peerDependenciesMeta:
+    "@aws-sdk/credential-providers":
+      optional: true
+    "@mongodb-js/zstd":
+      optional: true
+    gcp-metadata:
+      optional: true
+    kerberos:
+      optional: true
+    mongodb-client-encryption:
+      optional: true
+    snappy:
+      optional: true
+    socks:
+      optional: true
+  checksum: 11677b416ba2bd8c8835663445b89db7f32faca763c5c3ce6d9de246826b4796ec628c35e84d1dc0b3c11be9623a1ebd6ecdb8eb90a40eededb8bc4fd75e4693
   languageName: node
   linkType: hard
 
@@ -14734,40 +14778,6 @@ __metadata:
     saslprep:
       optional: true
   checksum: f0b1347739cc362b82b3aabc7e7d4d74bc7a344ed1bbafd6f92681bcab440f6cc618ffa0438d41d2789cb34818f3b09d4c78f517b42160ebae55bf2c96f13953
-  languageName: node
-  linkType: hard
-
-"mongodb@npm:^6.7.0":
-  version: 6.7.0
-  resolution: "mongodb@npm:6.7.0"
-  dependencies:
-    "@mongodb-js/saslprep": ^1.1.5
-    bson: ^6.7.0
-    mongodb-connection-string-url: ^3.0.0
-  peerDependencies:
-    "@aws-sdk/credential-providers": ^3.188.0
-    "@mongodb-js/zstd": ^1.1.0
-    gcp-metadata: ^5.2.0
-    kerberos: ^2.0.1
-    mongodb-client-encryption: ">=6.0.0 <7"
-    snappy: ^7.2.2
-    socks: ^2.7.1
-  peerDependenciesMeta:
-    "@aws-sdk/credential-providers":
-      optional: true
-    "@mongodb-js/zstd":
-      optional: true
-    gcp-metadata:
-      optional: true
-    kerberos:
-      optional: true
-    mongodb-client-encryption:
-      optional: true
-    snappy:
-      optional: true
-    socks:
-      optional: true
-  checksum: 11677b416ba2bd8c8835663445b89db7f32faca763c5c3ce6d9de246826b4796ec628c35e84d1dc0b3c11be9623a1ebd6ecdb8eb90a40eededb8bc4fd75e4693
   languageName: node
   linkType: hard
 
